@@ -1,0 +1,31 @@
+/***
+	Funciones DATEPART
+***/
+
+SELECT DATEPART(DAY, GETDATE()) 'Dia del mes'
+SELECT DATEPART(YEAR, GETDATE()) 'Dia del año'
+SELECT DATEPART(DW, GETDATE()) 'Día de la semana'
+
+PRINT ISDATE(GETDATE())
+PRINT ISDATE('2023/05/21')
+PRINT ISDATE('20230521')
+PRINT ISDATE('2023521')
+PRINT ISDATE('2023:05:21')
+
+
+DECLARE @fecha DATE
+SET @fecha = GETDATE()
+
+PRINT @fecha
+PRINT REPLACE(@fecha, '-', '/')
+
+IF ISDATE(REPLACE(@fecha, '-', '/')) = 1
+	BEGIN
+		PRINT GETDATE()
+		PRINT 'Es una fecha'
+	END
+ELSE
+	BEGIN
+		PRINT 'No es una fecha'
+		PRINT 'Esto no es una fecha'
+	END
