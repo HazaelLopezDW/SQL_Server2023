@@ -3,6 +3,6 @@
 */
 
 CREATE TABLE TurnoEstado(
-    idEstado SMALLINT 
+    idEstado SMALLINT PRIMARY KEY
     descripcion VARCHAR(50) NULL
 )
