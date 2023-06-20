@@ -2,4 +2,4 @@
 * Creando Tipo Paciente
 */
 
-CREATE TYPE Paciente FROM INT NOT NULL
+CREATE TYPE paciente FROM INT NOT NULL

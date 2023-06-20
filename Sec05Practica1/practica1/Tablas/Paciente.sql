@@ -8,10 +8,10 @@ CREATE TABLE Paciente(
     nombre VARCHAR(50) NULL,
     apellido VARCHAR(50) NULL,
     genero CHAR(1) NULL,
-    fNacimiento DATE
+    fNacimiento DATE,
     domicilio VARCHAR(50) NULL,
     idPais CHAR(3) NOT NULL,
     telefono VARCHAR(50) NULL,
-    email VARCHAR(50) NULL
+    email VARCHAR(50) NULL,
     observacion observacion
 )

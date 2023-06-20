@@ -3,7 +3,7 @@
 **/
 
 CREATE TABLE Historia(
-    idHitoria historia IDENTITY(1,1) PRIMARY KEY,
+    idHistoria historia IDENTITY(1,1) PRIMARY KEY,
     fechaHistoria DATETIME,
     observacion observacion
 )

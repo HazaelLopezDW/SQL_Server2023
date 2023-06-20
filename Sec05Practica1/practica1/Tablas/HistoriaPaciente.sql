@@ -3,7 +3,7 @@
 */
 
 CREATE TABLE HistoriaPaciente(
-    idHistoria HistoriaPaciente,
+    idHistoria historia,
     idPaciente paciente,
     idMedico medico,
 
